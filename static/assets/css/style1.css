@@ -138,18 +138,19 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+  /* background: #3787ff; */
   color: #ffffff;
   border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
-  transition: 0.3s;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   font-size: 14px;
   display: inline-block;
+  transition: 0.8s ease all;
 }
 
 .get-started-btn:hover {
-  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+  background: linear-gradient(to bottom, #3787ff 0%, #1249f1 100%);
   color: #fff;
 }
 
