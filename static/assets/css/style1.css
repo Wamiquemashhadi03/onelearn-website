@@ -1,26 +1,16 @@
-/**
-* Template Name: Mentor
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #5fcf80;
+  color: #3787ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #86db9f;
+  color: #1249f1;
   text-decoration: none;
 }
 
@@ -43,7 +33,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
+  background: #3787ff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +47,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #7ed899;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   color: #fff;
 }
 
@@ -85,7 +75,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid #3787ff;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -136,7 +126,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 #header .logo img {
@@ -148,18 +138,19 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+  /* background: #3787ff; */
   color: #ffffff;
   border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
-  transition: 0.3s;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   font-size: 14px;
   display: inline-block;
+  transition: 0.8s ease all;
 }
 
 .get-started-btn:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #3787ff 0%, #1249f1 100%);
   color: #fff;
 }
 
@@ -217,7 +208,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .navbar .dropdown ul {
@@ -254,7 +245,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .navbar .dropdown:hover>ul {
@@ -354,7 +345,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .navbar-mobile .getstarted,
@@ -389,7 +380,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -457,8 +448,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+  border: 2px solid #3787ff;
 }
 
 @media (min-width: 1024px) {
@@ -533,7 +524,7 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  background: #3787ff;
   padding: 30px 0;
   color: #fff;
 }
@@ -574,11 +565,11 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 .about .content .learn-more-btn {
-  background: #5fcf80;
+  background: #3787ff;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px 9px 25px;
@@ -589,7 +580,7 @@ section {
 }
 
 .about .content .learn-more-btn:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   color: #fff;
 }
 
@@ -610,7 +601,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #5fcf80;
+  color: #3787ff;
   font-weight: 700;
 }
 
@@ -628,7 +619,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #5fcf80;
+  background: #3787ff;
   border-radius: 4px;
   color: #fff;
 }
@@ -657,7 +648,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #5fcf80;
+  color: #1249f1;
   background: #fff;
 }
 
@@ -672,7 +663,7 @@ section {
 .why-us .icon-boxes .icon-box i {
   font-size: 32px;
   padding: 18px;
-  color: #5fcf80;
+  color: #3787ff;
   margin-bottom: 30px;
   background: #ecf9f0;
   border-radius: 50px;
@@ -724,11 +715,11 @@ section {
 }
 
 .features .icon-box:hover {
-  border-color: #5fcf80;
+  border-color: #3787ff;
 }
 
 .features .icon-box:hover h3 a {
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 /*--------------------------------------------------------------
@@ -754,7 +745,7 @@ section {
 }
 
 .courses .course-content h3 a:hover {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .courses .course-content p {
@@ -764,7 +755,7 @@ section {
 
 .courses .course-content h4 {
   font-size: 14px;
-  background: #5fcf80;
+  background: #3787ff;
   padding: 7px 14px;
   color: #fff;
   margin: 0;
@@ -846,7 +837,7 @@ section {
 }
 
 .trainers .member .social a:hover {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 .trainers .member .social i {
@@ -931,11 +922,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5fcf80;
+  border: 1px solid #3787ff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5fcf80;
+  background-color: #3787ff;
 }
 
 @media (max-width: 767px) {
@@ -987,7 +978,7 @@ section {
   display: block;
   width: 60px;
   height: 1px;
-  background: #5fcf80;
+  background: #3787ff;
   bottom: 0;
   left: 0;
 }
@@ -1038,12 +1029,12 @@ section {
 }
 
 .cource-details-tabs .nav-link:hover {
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 .cource-details-tabs .nav-link.active {
-  color: #5fcf80;
-  border-color: #5fcf80;
+  color: #3787ff;
+  border-color: #3787ff;
 }
 
 .cource-details-tabs .tab-pane.active {
@@ -1073,7 +1064,7 @@ section {
 
   .cource-details-tabs .nav-link.active {
     color: #fff;
-    background: #5fcf80;
+    background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   }
 }
 
@@ -1134,7 +1125,7 @@ section {
 }
 
 .events .read-more a:hover {
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 .events .card:hover img {
@@ -1142,11 +1133,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #5fcf80;
+  border-color: #3787ff;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #5fcf80;
+  color: #3787ff;
 }
 
 /*--------------------------------------------------------------
@@ -1174,7 +1165,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #5fcf80;
+  color: #3787ff;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1206,7 +1197,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5fcf80;
+  color: #3787ff;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1224,7 +1215,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #5fcf80;
+  background: #3787ff;
   display: inline-block;
   padding: 8px 35px;
   border-radius: 50px;
@@ -1238,12 +1229,12 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #5fcf80;
+  background: #3787ff;
 }
 
 .pricing .advanced {
@@ -1255,7 +1246,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #5fcf80;
+  background: #3787ff;
   color: #fff;
 }
 
@@ -1273,7 +1264,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #5fcf80;
+  color: #3787ff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1308,7 +1299,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #5fcf80;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   color: #fff;
 }
 
@@ -1337,7 +1328,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1357,7 +1348,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #3787ff;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1371,7 +1362,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #5fcf80;
+  border-color: #3787ff;
 }
 
 .contact .php-email-form input {
@@ -1383,7 +1374,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #5fcf80;
+  background: #3787ff;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1392,7 +1383,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
 }
 
 @keyframes animate-loading {
@@ -1459,7 +1450,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: #3787ff;
   font-size: 18px;
   line-height: 1;
 }
@@ -1483,7 +1474,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 #footer .footer-newsletter {
@@ -1523,15 +1514,15 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #5fcf80;
+  background: #3787ff;
   color: #fff;
-  transition: 0.3s;
+  transition: .8s ease all;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
 }
 
 #footer .credits {
@@ -1540,18 +1531,18 @@ section {
 }
 
 #footer .credits a {
-  color: #3ac162;
+  color: #3787ff;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #5fcf80;
+  color: #1249f1;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5fcf80;
+  background: #3787ff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1560,11 +1551,12 @@ section {
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
+  transition: 0.3s ease all;
 }
 
 #footer .social-links a:hover {
-  background: #3ac162;
+  background: linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
   color: #fff;
   text-decoration: none;
+  transform: scale(1.1);
 }
