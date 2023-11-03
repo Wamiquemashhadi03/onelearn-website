@@ -10,7 +10,7 @@
     <link href="{% static 'assets/css/register1.css' %}" rel="stylesheet">
 </head>
 
-<body style="background:linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);">
+<body>
     
         <form method="POST" action="register"><br><br>
             {% csrf_token %}
@@ -23,8 +23,10 @@
             <input type="email" name="email" placeholder="E-mail" class="bob">
             <input type="password" name="password" placeholder="Create password" class="bob">
             <input type="password" name="password2" placeholder="Confirm password" class="bob">
-            <input type="submit" value="Sign Up" class="bob" style="margin-top: 50px;width: 25rem;margin-left: 120px;background:linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);border:0px;border-radius:5px;color:#fff;font-size:20px">
-            <br><br><br><br><a href="login">Already registered</a>
+            <input type="submit" value="Sign Up" id="submit">
+            <div class="signin">
+                Already registered? <a href="/login">Sign in</a>
+            </div>
             
         </form>
    

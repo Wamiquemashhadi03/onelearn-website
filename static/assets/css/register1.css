@@ -1,23 +1,24 @@
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Handjet:wght@600&family=Lora:ital@1&family=Merriweather:wght@900&family=Poppins:wght@200&family=Raleway:wght@100&display=swap');
-
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
  * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
  }
+body{
+    background:linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
 
- html {
-     font-size: 62.5%;
-     font-family: 'Poppins', sans-serif;
- }
-
- form {
-     height: 58rem;
+form {
+     height: 55rem;
      width: 50rem;
      background: #fff;
      border-radius: 10px;
      margin: 8rem auto;
- }
+}
 
  .bob {
      width: 40rem;
@@ -28,17 +29,36 @@
      border-radius: 5px;
    
  }
+#submit{
+    margin: 2rem 12.2rem;
+    height: 4.5rem;
+    width: 25rem;
+    background:linear-gradient(to bottom, #1249f1 0%, #3787ff 100%);
+    border:none;
+    border-radius:.5rem;
+    color:#fff;
+    font-size:2rem;
+}
 
- h1 {
+h1 {
      margin: 30px;
-     margin-left: 180px;
-     color: #254ff7;
-     font-size: 35px;
- }
+    text-align: center;
+     color: #000;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 33px;
+}
 
- a {
-     font-size: 18px;
-     color: #3498db;
-     margin-left: 180px;
-
- }
+.signin {
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: .08rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+.signin a {
+    color: #3498db;
+    text-decoration: none;
+}
+.signin a:hover {
+    text-decoration: underline;
+}
