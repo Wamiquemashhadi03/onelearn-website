@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from .models import *
 
 
 def index(request):
@@ -79,3 +80,29 @@ def coursedetails(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def profile(request):
+    queryset = Profile.objects.all()
+    context = {'infos':queryset}
+    return render(request, 'profile.html', context)
+
+def editprofile(request):
+    if request.method == "POST":
+        data = request.POST 
+
+        name = request.POST.get('fullname')
+        email = request.POST.get('email')
+        phone = request.POST.get('phonenum')
+        country = request.POST.get('country')
+        state = request.POST.get('state')
+        address = request.POST.get('address')
+        # profile_image = request.FILES.get('stu_image')
+
+        Profile.objects.create(name=name, email=email, phone=phone, country=country, state=state, address=address)
+        return redirect('profile')
+        # print(name,email,phone,country,state,address)
+
+    return render(request, 'editprofile.html')
+def index1(request):
+    return render(request, 'index1.html')
+
