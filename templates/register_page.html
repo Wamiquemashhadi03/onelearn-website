@@ -1,4 +1,3 @@
-{%load static%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,67 +8,68 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link href="{% static 'assets/css/register.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/profile2.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/home2.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/register.css">
 
-     <title>Registration</title>
+    <title>Regiser Page</title>
   </head>
-  <body>      
-     {%if messages %}
-      <div class="notification-container">
+  <body>
+
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="logo">Profile</a>
+        </nav>
+    </header>
+
+
+    <div class="notification-container">
         <div class="notification">
-         {%for message in messages%}
-
-            <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{message}}</p>
-         {%endfor%}
-
-         {% comment %} <img id='cross' src="{% static 'assets/png/close.png'%}" width="15px" height="15px" alt=""> {% endcomment %}
+            <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>Username is already taken.</p>
+            <img id='cross' src="images/close.png" width="15px" height="15px" alt="">
         </div>
     </div>
+
     <script>
         var cross = document.getElementById('cross')
         cross.addEventListener('click', ()=> {
             document.getElementsByClassName('notification-container')[0].style.display = 'none';
         })
+
     </script>
-      {%endif%}
+
+
   <main class="main-container">
       <div class="container ">
         <h1 class="signup-heading">Sign Up</h1>
         <div class="user-content-container user-profile-form-container">
-          <form action="" method="POST">
-            {%csrf_token%}
+          <form action="login_page.html">
             <ul>
               <li class="name">
                   <label for="username">Username</label>
-                  {{form.username.errors}}
-                  {{form.username}}
+                  <input type="text" name="" id="username" class="username-input" placeholder="Username">
               </li>
 
               <li class="email">
                 <label for="">Email</label>
-                {{form.email.errors}}
-                {{form.email}}
+                <input type="text" name = "" id="email" class="email-input" placeholder="Email">
               </li>
 
               <li class="pass">
                 <label for="">Password</label>
-                {{form.password1.errors}}
-                {{form.password1}}
+                <input type="password" name = "" id="password" class="pass-input" placeholder="Password">
               </li>
 
               <li class="confirm-pass">
                 <label for="">Confirm Password</label>
-                {{form.password2.errors}}
-                {{form.password2}}
+                <input type="text" name = "" id="confirm-pass" class="confirm-pass-input" placeholder="Confirm password">
               </li>
             
           </ul>
 
           <button class="signup-button">Sign up</button>
 
-          <p class="login-link">Have an account?? <a href="login">Log in</a></p>
+          <p class="login-link">Have an account?? <a href="login_page.html">Log in</a></p>
       </div>
       </div>
   </main>

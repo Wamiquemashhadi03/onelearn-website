@@ -9,13 +9,29 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
+      
       <div class="container">
          <header>Login Form</header>
-         <form action="login" method="POST"> 
+         <form action="" method="POST"> 
             {% csrf_token %}
-            {%for message in messages%}
-            <h5>{{message}}</h5>
-            {% endfor %}
+           {%if messages %}
+      <div class="notification-container">
+        <div class="notification">
+         {%for message in messages%}
+
+            <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{message}}</p>
+         {%endfor%}
+
+         {% comment %} <img id='cross' src="{% static 'assets/png/close.png'%}" width="15px" height="15px" alt=""> {% endcomment %}
+        </div>
+    </div>
+    <script>
+        var cross = document.getElementById('cross')
+        cross.addEventListener('click', ()=> {
+            document.getElementsByClassName('notification-container')[0].style.display = 'none';
+        })
+    </script>
+      {%endif%}
             
 
             <div class="input-field">
@@ -63,5 +79,5 @@
            }
          }
       </script>
-   </body>
+  </body>
 </html>

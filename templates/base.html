@@ -53,14 +53,23 @@
           <li><a href="events">Events</a></li>
           <li><a href="pricing">Pricing</a></li>
           <li><a href="contact">Contact</a></li>
+          {%if user.is_authenticated %}
           <li><a href="profile" class="rounded"><i class="fa fa-user ms-3" style="color: #116ffb; font-size: 30px;"></i></a></li>
+      
+      {%endif%}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       
-      <a href="register" class="get-started-btn">Get Started</a>
+      {%if user.is_authenticated %}
+      <a href="logout" class="get-started-btn">Logout</a>
+      {%else%}
+      <a href="register" class="get-started-btn">Login or Sign Up</a>
+      {%endif%}
     </div>
   </header><!-- End Header -->
+
+
     {% block body %}{% endblock body %}
 
     

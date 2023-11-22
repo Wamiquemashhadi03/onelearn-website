@@ -15,13 +15,13 @@
     
     <div class="sidebar position-fixed" tabindex="" id="" aria-labelledby="offcanvasExampleLabel">
         <div class="text">
-            <h5 class="offcanvas-title py-4 ps-4" id="offcanvasExampleLabel">Display <a href="#">Username</a> </h5>
+            <h5 class="offcanvas-title py-4 ps-4" id="offcanvasExampleLabel">{{user}}</a> </h5>
 
 <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  -->
         </div>
 
         <div class="offcanvas-body p-2">
-            <li><a href="#profile" class="rounded"><i class="fa fa-user"></i>My Profile</a></li>
+            <li><a href="profile" class="rounded"><i class="fa fa-user"></i>My Profile</a></li>
             <li><a href="#courses" class="rounded"><i class="fa fa-book"></i>My Courses</a></li>
             <!-- <li><a href="#" class="rounded"><i class="fa fa-bank"></i>Bank Details</a></li> -->
             <li><a href="#" class="rounded"><i class="fa fa-lock"></i>Change Password</a></li>
@@ -60,26 +60,29 @@
 
     <div class="profile" id="profile">
         {% comment %} <a href="#"><i class="fa fa-pencil"></i></a> {% endcomment %}
-        <div class="profileimage">
-            <img src="/static/assets/img/profileimg.png" alt="" height="150" width="150">
-        </div>
-        <form class="userdata d-flex" method="post" enctype="multipart/form-data">
+        
+        <form class="userdata d-flex" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
+            <div class="profileimage">
+            {% comment %} <img src="{{user.profile.profile_img.url}}" alt="" height="150" width="150">
+            {{form.profile_img}} {% endcomment %}
+             </div>
             <div class="leftside">
                 <p>Full Name</p>
-                <input type="text" value="" name="fullname" required>
+                {{form.name}}
                 <p>Country</p>
-                <input type="text" value="" name="country" required>
+                {{form.country}}
                 <p>E-mail</p>
-                <input type="text" value="" name="email" required>
+                {{user.email}}
+                
             </div>
             <div class="rightside">
                 <p>Phone Num</p>
-                <input type="num" value="" name="phonenum" required>
+                {{form.phone}}
                 <p>State</p>
-                <input type="text" value="" name="state" required>
+                {{form.state}}
                 <p>Address</p>
-                <input type="text" value="" name="address" required>
+                {{form.address}}
             </div>
             <a href="profile"><button type="submit" class="btn btn-success">Save</button></a>
         </form>
