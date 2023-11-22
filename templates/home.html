@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <p class="logo">Profile</p>
+                <a class="profile-icon-link-container" href="profile.html">
+                    <img src="images/default.svg" alt="profile-icon">
+                    <span class="header-username">Hello, Nitin</span>
+                </a>
+        </nav>
+    </header>
+
+    <script>
+        var cross = document.getElementById('cross')
+        cross.addEventListener('click', ()=> {
+            document.getElementsByClassName('notification-container')[0].style.display = 'none';
+        })
+
+    </script>
+
+
+    <main class="main-container">
+        <div class="container">
+            <div class="profile-photo-container">
+                <img src="images/default.jpg" alt="User Image" width="100px" srcset="">
+            </div>
+
+
+            <div class="user-content-container">
+                <p class="username">John Doe (Default)</p>
+                <p class="user-title">A web developer/ full stack developer.</p>
+                <p class="user-desc">This is the default, title change it in profile.</p>
+                <div class="profile-edit-link-container">
+                    <a href="profile.html">Edit</a>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
